@@ -34,9 +34,6 @@ int main()
 	FileManager::FQ readObject;
 	FileManager::get().ReadFromFile(readObject, filename.c_str());
 
-	std::cout << "Frequency: " << readObject.frequency << std::endl;
-	std::cout << "Duration: " << readObject.duration << std::endl;
-
 	Beep(readObject.frequency, readObject.duration);
 
 	return 0;
